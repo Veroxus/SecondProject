@@ -10,9 +10,9 @@ int reduceSpace (char *line) {
 
   while (strlen(line) > total) {
     stop = line[total];
-      if (stop == 32) {
+      if (stop == 44) {
         stop = line[total + 1];
-          if (stop == 32) {
+          if (stop == 44) {
             count++;
             for (a = 0; ((strlen(line) - stop) + 1) > a; a++) {
               line[stop+a] = line[stop+1+a];
